@@ -23,7 +23,9 @@
   font-style: normal;
 }
 
+/*шапка сайта ps*/
 .header {
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
 
@@ -33,6 +35,8 @@
   background-size: cover;
   background-position: top center;
   background-color: #013220;
+
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
 }
 
 .header::after {
@@ -47,6 +51,7 @@
 }
 
 .container {
+  width: 1200px;
   position: relative;
   z-index: 1;
 
@@ -56,20 +61,6 @@
   justify-content: center;
 
   margin: auto;
-}
-
-/**ВЫНЕСtИ .logo  в корень и пересчитать все в ремах*/
-
-/*@media (min-width: 1201px) {*/
-/**шапка сайта ps**/
-.header {
-  width: 100%;
-
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
-}
-
-.container {
-  width: 1200px;
 }
 
 .menu-list {
@@ -115,22 +106,22 @@
 }
 
 /**после шапки доп поле с трендами*/
-/**aside trends*/
-.now-in-trends__header {
+/*заголовок*/
+.section__header {
   display: flex;
   justify-content: center;
 
   margin: 60px 0 40px;
 }
 
-.now-in-trends__header__text {
+.section__header__text {
   color: black;
   font-family: "OpenSans-Bold", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
 }
 
-.now-in-trends__header__text:after {
+.section__header__text:after {
   content: "";
   display: block;
 
@@ -140,6 +131,7 @@
   background-color: #b59f5b;
   opacity: 0.4;
 }
+/*контент*/
 .now-in-trends {
   display: flex;
   flex-wrap: wrap;
@@ -658,77 +650,55 @@
 }
 
 /**наши изделия shop*/
-.shop {
-  margin-top: 65px;
-  margin-bottom: 65px;
-
-  box-sizing: border-box;
-
-  display: flex;
-  flex-direction: column;
-}
+/*shop*/
 
 .shop-header-container {
-  margin: 0 auto 40px;
-  width: 100%;
-  max-width: 200px;
-
-  text-align: center;
-}
-
-.shop-title {
-  color: black;
-  font-family: "OpenSans-Bold", sans-serif;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-
-.shop-title:after {
-  content: "";
-  display: block;
-
-  width: 66px;
-  height: 3px;
-  margin: 10px auto 0;
-  background-color: #b59f5b;
-  opacity: 0.4;
-}
-
-.shop__item__container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  margin: 0 -32px;
 }
 
-.shop-cards-img {
-  width: 100%;
-
-  position: relative;
-  z-index: 1;
+.shop-header {
 }
 
-.shop__item {
-  margin: 0 32px;
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
-.card-content {
-  width: 345px;
-  margin-top: -30px;
-  border: 3px solid #b59f5b;
-
+.card {
+  overflow: hidden;
+  height: 100%;
   display: flex;
-  flex-flow: column nowrap;
-  position: relative;
-  z-index: 2;
+  flex-direction: column;
+  background: #fff;
 }
 
-.title {
-  margin: 50px 20px 14px 20px;
+.card__image {
+  height: 200px;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 20px;
 }
 
-.card-title {
+.card__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  border: 3px solid #b59f5b;
+  padding: 50px 20px 20px;
+  margin-top: -30px;
+}
+
+.card__title {
   font-family: "OpenSans-Bold", sans-serif;
   font-size: 20px;
   color: black;
@@ -738,38 +708,32 @@
   margin-bottom: 14px;
 }
 
-.suptitle {
-  margin-right: 20px;
-  margin-left: 20px;
-}
-.card-suptitle {
+.card__text {
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 15px;
   color: black;
   line-height: 22px;
 }
 
-.card-price {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.card__link {
+  text-decoration: none;
 
-  margin-right: 100px;
+  color: #b59f5b;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
 }
 
-.card-price-old {
-  font-family: "OpenSans-Bold", sans-serif;
-  font-size: 14px;
-  color: black;
-  text-decoration: line-through;
-  display: flex;
+.card__link:hover {
+  color: #b59f5b;
+  border-bottom: 2px solid #b59f5b;
 }
 
-.card-price-new {
-  font-family: "OpenSans-Bold", sans-serif;
-  font-size: 20px;
-  color: black;
+.card__bottom {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .button-submit-inshop {
@@ -789,27 +753,6 @@
   border-top: 2px solid #e6dfc8;
 }
 
-.card-suptitle-link {
-  text-decoration: none;
-
-  color: #b59f5b;
-  font-family: "OpenSans-Regular", sans-serif;
-  font-size: 15px;
-  line-height: 22px;
-}
-
-.card-suptitle-link:hover {
-  color: #b59f5b;
-  border-bottom: 2px solid #b59f5b;
-}
-
-.card-price-info {
-  display: flex;
-  flex-direction: row;
-
-  margin: 30px 20px;
-}
-
 .rouble-svg-old {
   width: 15px;
   height: 15px;
@@ -822,16 +765,38 @@
   float: right;
 }
 
-.price-new-alone {
-  margin-top: 24px;
+.cost__old {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 14px;
+  color: black;
+  text-decoration: line-through;
+  display: flex;
+}
+
+.cost__new {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 20px;
+  color: black;
+  display: flex;
+}
+
+.catalog__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -32px;
+}
+
+.catalog__col {
+  width: 33.33333333%;
+  padding: 0 32px;
+  margin-bottom: 30px;
 }
 
 /**пол с социалкой*/
-
 .footer {
   background-color: #f4f7f6;
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 30px auto 0;
 
   display: flex;
   justify-content: center;
@@ -856,13 +821,13 @@
   text-align: center;
   margin: 74px auto 41px;
 }
-/*}*/
 
-@media (max-width: 1200px) {
-  /**шапка сайта tablet**/
+/**шапка сайта tablet
+/*  
+@media (max-width: 767.98px) {
   .header {
     width: 100%;
-    min-width: 768px;
+    /*min-width: 768px;
     background-image: url("../images/banner-bg-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -923,19 +888,37 @@
     padding-bottom: 125px;
     margin-top: 105px;
   }
+  .now-in-trends__item {
+    width: 49.8%;
+    margin-bottom: 3px;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  .catalog__col {
+    width: 50%;
+    padding: 0 10px;
+  }
+
+  .catalog__row {
+    margin: 0 -20px;
+    
+  }
+  .footer {
+   max-width: 698px;
 }
 
-@media (max-width: 640px) {
-  /**шапка сайта mobile**/
+шапка сайта mobile
+@media (max-width: 360px) {
   .header {
     width: 100%;
-    min-height: ;
+    /*min-height: ;
     background-image: url("../images/banner-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
     background-position: top center;
-  }
+  
 
   .container {
     width: 360px;
@@ -955,4 +938,35 @@
   .menu {
     display: none;
   }
+
+  .now-in-trends__item {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+
+  .catalog__col {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .catalog__row {
+    margin: 0 -20px;
+  }
+  .footer {
+   max-width: 330px;
 }
+
+**/
+/*@media (max-width: 991.98px) {
+  .container {
+    padding: 0 15px;
+  }
+  .popular__col {
+    width: 50%;
+  }
+}
+@media (max-width: 767.98px) {
+  .catalog__col {
+    width: 100%;
+  }
+}*/
