@@ -23,9 +23,15 @@
   font-style: normal;
 }
 
-/*шапка сайта ps*/
+/**шапка сайта ps
+===========================*/
+.logo_mobile {
+  display: none;
+}
+
 .header {
   width: 100%;
+  height: 100%;
   text-align: center;
   text-transform: uppercase;
 
@@ -50,7 +56,7 @@
   opacity: 0.6;
 }
 
-.container {
+.container__menu {
   width: 1200px;
   position: relative;
   z-index: 1;
@@ -93,6 +99,7 @@
 }
 
 .header-title {
+  max-width: 720px;
   color: #ffffff;
   font-family: "OpenSans-Bold", sans-serif;
   font-size: 45px;
@@ -102,10 +109,11 @@
   z-index: 1;
 
   padding-bottom: 146px;
-  margin-top: 126px;
+  margin: 126px auto 0;
 }
 
-/**после шапки доп поле с трендами*/
+/**после шапки доп поле с трендами
+===========================*/
 /*заголовок*/
 .section__header {
   display: flex;
@@ -225,14 +233,17 @@
 }
 
 /**основная страница */
-/**левая колонка основной страницы*/
+/**левая колонка основной страницы
+===========================*/
 .page {
-  margin-bottom: 64px;
+  margin: 0 auto 64px;
+}
 
+.wrapper_container {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   align-items: flex-start;
   justify-content: center;
@@ -244,6 +255,7 @@
 
   box-sizing: border-box;
   display: flex;
+  justify-content: space-between;
 }
 
 .post-preview {
@@ -257,7 +269,6 @@
 
 .posts-content {
   width: 367px;
-  margin-left: 30px;
   box-sizing: border-box;
 }
 
@@ -336,7 +347,8 @@
   margin-top: 20px;
 }
 
-/**правая колонка основной страницы*/
+/**правая колонка основной страницы 
+===========================*/
 .side-bar {
   display: flex;
   flex-direction: column;
@@ -577,6 +589,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: flex-start;
 }
 
 .tag-item {
@@ -649,9 +662,8 @@
   line-height: 40px;
 }
 
-/**наши изделия shop*/
-/*shop*/
-
+/**наши изделия shop
+===========================*/
 .shop-header-container {
   display: flex;
   justify-content: center;
@@ -660,7 +672,7 @@
 .shop-header {
 }
 
-.container {
+.catalog__container {
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -792,7 +804,8 @@
   margin-bottom: 30px;
 }
 
-/**пол с социалкой*/
+/**пол с социалкой
+===========================*/
 .footer {
   background-color: #f4f7f6;
   max-width: 1170px;
@@ -822,24 +835,27 @@
   margin: 74px auto 41px;
 }
 
-/**шапка сайта tablet
-/*  
-@media (max-width: 767.98px) {
+/**media tablet
+===========================*/
+@media (max-width: 1199.98px) {
+  /*шапка сайта*/
   .header {
-    width: 100%;
-    /*min-width: 768px;
-    background-image: url("../images/banner-bg-tablet.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
+    background-image: url(../images/banner-bg-tablet.jpg);
   }
 
-  .container {
-    width: 768px;
-  }
   .logo {
     width: 158px;
-    margin-top: 43px;
+    margin-top: 0;
+  }
+  .logo_mobile {
+    display: none;
+  }
+
+  .container__menu {
+    max-width: 698px;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 50px;
   }
 
   .menu {
@@ -881,19 +897,113 @@
   }
 
   .header-title {
-    color: #ffffff;
-    font-family: "OpenSans-Bold", sans-serif;
+    max-width: 640px;
     font-size: 40px;
     line-height: 55px;
+
+    position: relative;
+    z-index: 1;
+
     padding-bottom: 125px;
-    margin-top: 105px;
+    margin-top: 100px;
   }
+
+  /*сейчас в тренде*/
+  .section__header__text {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .now-in-trends__link {
+    font-size: 14px;
+  }
+
+  .now-in-trends__title__text {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
   .now-in-trends__item {
     width: 49.8%;
     margin-bottom: 3px;
   }
-  .container {
-    padding: 0 15px;
+
+  .page {
+    max-width: 768px;
+    margin-bottom: 50px;
+  }
+
+  .post {
+    max-width: 340px;
+    min-height: 545px;
+
+    flex-flow: column;
+  }
+
+  .posts {
+    margin-left: 35px;
+    padding-right: 5px;
+  }
+
+  .side-bar {
+    margin: 0 35px 0 auto;
+    padding-left: 5px;
+  }
+
+  .post__bord {
+    border-bottom: 2px solid #eeeeee;
+  }
+
+  .post-preview {
+    width: 100%;
+    overflow: hidden;
+  }
+  .posts-content {
+    width: 100%;
+  }
+  .posts-content-text {
+    margin-bottom: 20px;
+  }
+
+  .post:nth-child(n + 2) {
+    margin-top: 40px;
+  }
+
+  .posts-content-link {
+    font-size: 14px;
+  }
+
+  .posts-content-title {
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 17px;
+    margin-bottom: 40px;
+  }
+
+  .posts-content-inform {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+
+  .posts-content-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .posts-content-tags {
+    margin-top: 10px;
+  }
+
+  .section__header {
+    margin: 50px 0 40px;
+  }
+
+  .catalog {
+    margin: 0 35px;
+  }
+  .catalog__container {
+    max-width: 698px;
   }
   .catalog__col {
     width: 50%;
@@ -901,72 +1011,252 @@
   }
 
   .catalog__row {
-    margin: 0 -20px;
-    
+    margin: 0 -10px;
   }
+
+  .catalog__col {
+    padding: 0 10px;
+  }
+
   .footer {
-   max-width: 698px;
+    max-width: 698px;
+  }
 }
 
-шапка сайта mobile
-@media (max-width: 360px) {
+/**===========================*/
+@media (max-width: 640px) {
+  /*шапка сайта*/
   .header {
-    width: 100%;
-    /*min-height: ;
-    background-image: url("../images/banner-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-position: top center;
-  
-
-  .container {
-    width: 360px;
+    background-image: url(../images/banner-mobile.jpg);
   }
+
   .logo {
-    width: 270px;
-    margin-top: 225px;
+    display: none;
   }
 
-  .header-title {
-    font-size: 26px;
-    line-height: 36px;
-    padding-bottom: 218px;
-    margin-top: 45px;
+  .logo_mobile {
+    max-width: 278px;
+    display: flex;
+    position: relative;
+    z-index: 7;
+    margin: 180px auto 40px;
+  }
+
+  .container__menu {
+    max-width: 330px;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 30px;
   }
 
   .menu {
     display: none;
   }
 
-  .now-in-trends__item {
+  .menu_burger {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+  }
+
+  .menu_burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
     width: 100%;
+    height: 3px;
+    top: 11px;
+  }
+
+  .menu_burger::after,
+  .menu_burger::before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+  }
+
+  .menu_burger::before {
+    top: 0;
+  }
+
+  .menu_burger::after {
+    bottom: 0;
+  }
+
+  .header-title {
+    max-width: 300px;
+    font-size: 26px;
+    line-height: 36px;
+
+    position: relative;
+    z-index: 1;
+
+    padding-bottom: 215px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  /*сейчас в тренде*/
+  .section__header__text {
+    font-size: 16px;
+  }
+  .now-in-trends {
+    margin-bottom: 45px;
+  }
+
+  .now-in-trends__link {
+    font-size: 14px;
+  }
+
+  .now-in-trends__title__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .now-in-trends__item {
+    width: 99.8%;
     margin-bottom: 3px;
   }
 
+  /*основаня страница*/
+  .page {
+    max-width: 360px;
+    margin-bottom: 45px;
+  }
+  .wrapper_container {
+    flex-flow: column wrap;
+  }
+  .post {
+    min-height: 461px;
+    flex-flow: column;
+  }
+
+  .posts {
+    margin: 0 auto 45px;
+    padding: 0;
+  }
+  .post__bord,
+  .post__bord__mob {
+    border-bottom: 2px solid #eeeeee;
+  }
+  .post-preview {
+    width: 100%;
+    overflow: hidden;
+  }
+  .posts-content {
+    width: 100%;
+  }
+  .posts-content-text {
+    margin-bottom: 20px;
+  }
+
+  .post:nth-child(n + 2) {
+    margin-top: 40px;
+  }
+
+  .posts-content-link {
+    font-size: 14px;
+  }
+
+  .posts-content-title {
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .posts-content-inform {
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .posts-content-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .posts-content-tags {
+    margin-top: 10px;
+  }
+
+  /*правая часть основной страницы*/
+  .side-bar {
+    max-width: 360px;
+    margin: 0 15px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .news-header,
+  .e-mail__header,
+  .tags__header,
+  .topic__header {
+    font-size: 16px;
+    width: 330px;
+    margin-bottom: 25px;
+  }
+
+  .news-line::after,
+  .e-mail__header__line::after,
+  .tags__header__line::after,
+  .topic__header__line::after {
+    left: 132px;
+  }
+  .news-content {
+    width: 100%;
+  }
+
+  .news-container,
+  .button-submit,
+  .email-field {
+    width: 330px;
+  }
+
+  .search-field {
+    width: 280px;
+  }
+  .side-bar_e-mail {
+    margin-top: 45px;
+  }
+  .button-submit,
+  .side-bar_tags {
+    margin-bottom: 45px;
+  }
+
+  /*наши изделия shop*/
+  .section__header {
+    margin: 45px 0 25px;
+  }
+
+  .catalog {
+    margin: 0 15px;
+  }
+  .catalog__container {
+    max-width: 330px;
+  }
   .catalog__col {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   .catalog__row {
-    margin: 0 -20px;
+    margin: 0 -15px;
   }
-  .footer {
-   max-width: 330px;
-}
 
-**/
-/*@media (max-width: 991.98px) {
-  .container {
+  .catalog__col {
     padding: 0 15px;
   }
-  .popular__col {
-    width: 50%;
+
+  /*пол*/
+  .footer {
+    max-width: 330px;
+  }
+  .copyright {
+    margin: 50px auto 50px;
   }
 }
-@media (max-width: 767.98px) {
-  .catalog__col {
-    width: 100%;
-  }
-}*/
