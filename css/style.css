@@ -835,6 +835,178 @@
   margin: 74px auto 41px;
 }
 
+/*форма*/
+.popup_back {
+  /*display:none ;*/
+  position: fixed;
+  z-index: 15;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+}
+
+.popup {
+  /*display: none;*/
+  position: fixed;
+  z-index: 25;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 390px;
+  height: 590px;
+}
+
+.esc_img {
+  position: fixed;
+  z-index: 23;
+  width: 28px;
+  height: 28px;
+  top: -5%;
+  right: -1%;
+  color: #fff;
+}
+
+.popup__container {
+  height: 590px;
+
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.popup__header {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 25px;
+}
+.popup__header__text {
+  color: black;
+  font-family: "OpenSans-Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.popup__header__text::after {
+  content: "";
+  display: block;
+
+  width: 66px;
+  height: 3px;
+  margin: 10px auto 0;
+  background-color: #b59f5b;
+  opacity: 0.4;
+}
+
+.form__container {
+  max-width: 330px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+}
+
+.text__popup {
+  color: black;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 13px;
+}
+
+.select-label {
+  margin-bottom: 15px;
+}
+
+.select {
+  height: 48px;
+  width: 100%;
+
+  padding-left: 20px;
+  margin: 9px 0 33px;
+
+  background-color: #f4f7f6;
+  border: none;
+
+  -webkit-appearance: none;
+  -moz-appearence: none;
+
+  background-image: url("https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/select-arrows.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+}
+.select:focus {
+  border-bottom: 2px solid #b59f5b;
+  outline: none;
+  outline-offset: 2px;
+}
+
+.select_text {
+  color: black;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 13px;
+}
+
+.radio__container {
+  margin: 12px auto 33px;
+}
+.radio {
+  position: relative;
+  padding-left: 20px;
+}
+
+.radio::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #b59f5b;
+  border-radius: 50%;
+}
+
+.radio__control {
+  display: none;
+}
+
+.radio__control:checked + .radio::before {
+  background: #b59f5b;
+  width: 16px;
+  height: 16px;
+}
+
+.field {
+  margin: 12px auto 26px;
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 100%;
+  height: 130px;
+  background-color: #f4f7f6;
+  border: none;
+}
+.textarea::hover {
+  border: none;
+  border-bottom: 2px solid #b59f5b;
+}
+
+.button__form {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 60px;
+  background-color: #b59f5b;
+  border: none;
+  color: #ffffff;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.button__form__submit:hover {
+  border-top: 2px solid #e6dfc8;
+}
+
 /**media tablet
 ===========================*/
 @media (max-width: 1199.98px) {
@@ -1020,6 +1192,15 @@
 
   .footer {
     max-width: 698px;
+  }
+
+  .popup {
+    /*display: none;*/
+    max-width: 390px;
+  }
+
+  .form__container {
+    max-width: 330px;
   }
 }
 
@@ -1258,5 +1439,14 @@
   }
   .copyright {
     margin: 50px auto 50px;
+  }
+
+  .popup {
+    /*display: none;*/
+    max-width: 330px;
+  }
+
+  .form__container {
+    max-width: 280px;
   }
 }
