@@ -81,7 +81,7 @@
   margin-top: 29px;
 }
 
-.menu-list-item__m {
+.menu-link__indent {
   /* отступ меню на 35 начиная от 2го */
   margin-left: 35px;
 }
@@ -272,7 +272,8 @@
   box-sizing: border-box;
 }
 
-.post:nth-child(n + 2) {
+.post:nth-child(n + 2),
+.post__indent {
   margin-top: 64px;
 }
 
@@ -393,7 +394,8 @@
   flex-direction: row;
 }
 
-.news-container:nth-child(n + 3) {
+.news-container:nth-child(n + 3),
+.news-container__indent {
   margin-top: 22px;
 }
 
@@ -651,7 +653,7 @@
   align-items: center;
 }
 
-.topic-item:nth-child(n + 1) {
+.topic-item {
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -1137,7 +1139,8 @@
     margin-bottom: 20px;
   }
 
-  .post:nth-child(n + 2) {
+  .post:nth-child(n + 2),
+  .post__indent {
     margin-top: 40px;
   }
 
@@ -1335,7 +1338,8 @@
     margin-bottom: 20px;
   }
 
-  .post:nth-child(n + 2) {
+  .post:nth-child(n + 2),
+  .post__indent {
     margin-top: 40px;
   }
 

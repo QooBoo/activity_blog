@@ -23,11 +23,12 @@
          <nav class="menu">
             <ul class="menu-list">
                <li><a class="menu-link" href="#0">Главная</a></li>
-               <li class="menu-list-item__m "><a class="menu-link" href="#0">Посты</a></li>
-               <li class="menu-list-item__m"><a class="menu-link" href="#0">Статьи</a></li>
-               <li class="menu-list-item__m"><a class="menu-link" href="#0">Теги</a></li>
-               <li class="menu-list-item__m"><a class="menu-link" href="#0">Темы</a></li>
-               <li class="menu-list-item__m"><a class="menu-link" href="#0">Контакты</a></li>
+               <li><a class="menu-link menu-link__indent" href="#0">Посты</a></li>
+               <!-- menu-link__indent отступ пунктов меню вправо на 35-->
+               <li><a class="menu-link menu-link__indent" href="#0">Статьи</a></li>
+               <li><a class="menu-link menu-link__indent" href="#0">Теги</a></li>
+               <li><a class="menu-link menu-link__indent" href="#0">Темы</a></li>
+               <li><a class="menu-link menu-link__indent" href="#0">Контакты</a></li>
             </ul>
          </nav>
       </div>
@@ -123,7 +124,7 @@
       <div class="wrapper_container">
          <!--левая часть сайта-->
          <main class="posts">
-            <article class="post post__bord">
+            <article class="post post__bord post__indent">
                <div class="post-preview">
                   <img class="post-img" src="images/last-post1.jpg" alt="девушка идет по пляжу залитому солнцем">
                </div>
@@ -151,7 +152,7 @@
                   </div>
                </div>
             </article>
-            <article class="post post__bord">
+            <article class="post post__bord post__indent">
                <div class="post-preview">
                   <img class="post-img" src="images/last-post2.jpg" alt="девушка занимается йогой на пляже">
                </div>
@@ -181,7 +182,7 @@
                   </div>
                </div>
             </article>
-            <article class="post post__bord">
+            <article class="post post__bord post__indent">
                <div class="post-preview">
                   <img class="post-img" src="images/last-post3.jpg" alt="девушка на музыкальном фестивале">
                </div>
@@ -209,7 +210,7 @@
                   </div>
                </div>
             </article>
-            <article class="post post__bord">
+            <article class="post post__bord post__indent">
                <div class="post-preview">
                   <img class="post-img" src="images/last-post4.jpg" alt="накрытый стол">
                </div>
@@ -236,7 +237,7 @@
                   </div>
                </div>
             </article>
-            <article class="post post__bord__mob">
+            <article class="post post__bord__mob post__indent">
                <div class="post-preview">
                   <img class="post-img" src="images/last-post5.jpg" alt="подушка с надписью HANG OUT SPOT">
                </div>
@@ -292,7 +293,7 @@
                      <div><a class="news-content-title news-content-title-hover" href="#0">йога для домашних</a></div>
                   </div>
                </article>
-               <article class="news-container">
+               <article class="news-container news-container__indent">
                   <div class="news-preview">
                      <img class="news-img" src="images/45.jpg" alt="картинка балкона">
                   </div>
@@ -303,7 +304,7 @@
                            в балкон</a></div>
                   </div>
                </article>
-               <article class="news-container">
+               <article class="news-container news-container__indent">
                   <div class="news-preview">
                      <img class="news-img" src="images/501.jpg" alt="накрытый стол">
                   </div>
@@ -313,7 +314,7 @@
                      </div>
                   </div>
                </article>
-               <article class="news-container">
+               <article class="news-container news-container__indent">
                   <div class="news-preview">
                      <img class="news-img" src="images/7.jpg" alt="три девушки с длинными волосами стоят спиной">
                   </div>
@@ -473,92 +474,93 @@
             </div> <!-- /catalog__row--->
          </div> <!-- /catalog__flex--->
       </div> <!-- /cantainer--->
+   </section>
 
 
-      <!--пол-->
-      <footer class="footer">
-         <div class="socials">
-            <a href="#" class="social__icon_1"><img
-                  style="height: 20px; width: 20px; background-color: #0000; margin: auto;" class=""
-                  src="svg/004-twitter.svg" alt="иконка twitter"></a>
-            <a href="#" class="social__icon_1"><img
-                  style="height: 20px; width: 20px; background-color: #0000; margin: auto;" class=""
-                  src="svg/001-pinterest.svg" alt="иконка pinterest"></a>
-            <a href="#" class="social__icon_1"><img
-                  style="height: 20px; width: 20px; background-color: #0000; margin: auto;" class=""
-                  src="svg/002-facebook-logo.svg" alt="иконка facebook"></a>
-            <a href="#" class="social__icon_1"><img
-                  style="height: 20px; width: 20px; background-color: #0000; margin: auto;" class=""
-                  src="svg/005-instagram.svg" alt="иконка instagram"></a>
-            <a href="#" class="social__icon_1"><img
-                  style="height: 20px; width: 20px; background-color: #0000; margin: auto;" class=""
-                  src="svg/003-tumblr.svg" alt="иконка tumblr"></a>
-         </div>
-      </footer>
+   <!--пол-->
+   <footer class="footer">
+      <div class="socials">
+         <a href="#" class="social__icon_1"><img
+               style="height: 20px; width: 20px; background-color: #0000; margin: auto;" class=""
+               src="svg/004-twitter.svg" alt="иконка twitter"></a>
+         <a href="#" class="social__icon_1"><img
+               style="height: 20px; width: 20px; background-color: #0000; margin: auto;" class=""
+               src="svg/001-pinterest.svg" alt="иконка pinterest"></a>
+         <a href="#" class="social__icon_1"><img
+               style="height: 20px; width: 20px; background-color: #0000; margin: auto;" class=""
+               src="svg/002-facebook-logo.svg" alt="иконка facebook"></a>
+         <a href="#" class="social__icon_1"><img
+               style="height: 20px; width: 20px; background-color: #0000; margin: auto;" class=""
+               src="svg/005-instagram.svg" alt="иконка instagram"></a>
+         <a href="#" class="social__icon_1"><img
+               style="height: 20px; width: 20px; background-color: #0000; margin: auto;" class=""
+               src="svg/003-tumblr.svg" alt="иконка tumblr"></a>
       </div>
-      <!--wrapper_container-->
+   </footer>
+   </div>
+   <!--wrapper_container-->
 
-      <div class="copyright"><a class="copyright-link" href="#0">Copyright © 2009–2019 City Blog LLC.</a></div>
+   <div class="copyright"><a class="copyright-link" href="#0">Copyright © 2009–2019 City Blog LLC.</a></div>
 
+   <!--_hidden-->
+   <div class="popup_back">
+      <div class="popup">
+         <img class="esc_img" src="svg/Close_-_white1.svg">
 
-      <div class="popup_back">
-         <div class="popup">
-            <img class="esc_img" src="svg/Close_-_white1.svg">
+         <div class="popup__container">
+            <div class="popup__header">
+               <p class="popup__header__text">ваш фитбек</p>
+            </div>
+            <form class="form">
+               <div class="form__container">
 
-            <div class="popup__container">
-               <div class="popup__header">
-                  <p class="popup__header__text">ваш фитбек</p>
-               </div>
-               <form class="form">
-                  <div class="form__container">
+                  <div class="form-group">
+                     <label class="select-group">
+                        <span class="select-label  text__popup">Как часто вы заходите на сайт?</span>
+                        <select class="select">
+                           <option class="select_text" value="moscow" selected>Почти каждый день</option>
+                           <option class="select_text" value="st-petersburg">Раз в несколько дней</option>
+                           <option class="select_text" value="kazan">Раз в несколько недель</option>
+                           <option class="select_text" value="kazan">Несколько раз в год</option>
+                        </select>
+                     </label>
+                  </div>
 
-                     <div class="form-group">
-                        <label class="select-group">
-                           <span class="select-label  text__popup">Как часто вы заходите на сайт?</span>
-                           <select class="select">
-                              <option class="select_text" value="moscow" selected>Почти каждый день</option>
-                              <option class="select_text" value="st-petersburg">Раз в несколько дней</option>
-                              <option class="select_text" value="kazan">Раз в несколько недель</option>
-                              <option class="select_text" value="kazan">Несколько раз в год</option>
-                           </select>
-                        </label>
-                     </div>
+                  <div class="form-group">
+                     <div class="question">
+                        <span class="question__text text__popup">Вы подписаны на e-mail рассылку?</span>
+                        <div class="radio__container">
+                           <input type="radio" value="1" class="radio__control" name="answer" id="answer_yes">
+                           <label class="radio" for="answer_yes">
+                              да
+                           </label>
 
-                     <div class="form-group">
-                        <div class="question">
-                           <span class="question__text text__popup">Вы подписаны на e-mail рассылку?</span>
-                           <div class="radio__container">
-                              <input type="radio" value="1" class="radio__control" name="answer" id="answer_yes">
-                              <label class="radio" for="answer_yes">
-                                 да
-                              </label>
-
-                              <input type="radio" checked value="0" class="radio__control" name="answer" id="answer_no">
-                              <label class="radio" for="answer_no">
-                                 нет
-                              </label>
-                           </div>
+                           <input type="radio" checked value="0" class="radio__control" name="answer" id="answer_no">
+                           <label class="radio" for="answer_no">
+                              нет
+                           </label>
                         </div>
                      </div>
-
-                     <div class="form-group">
-                        <label class="field-group">
-                           <div class="field-label text__popup">Расскажите, какой контент вы хотели бы видеть
-                              на нашем сайте?</div>
-                           <div><textarea class="field textarea text__popup" placeholder="Может, больше рецептов?"
-                                 required></textarea>
-                           </div>
-                        </label>
-                     </div>
-
-                     <div class="form-group form-actions">
-                        <button class="button__form button__form__submit" type="button">Отправить</button>
-                     </div>
                   </div>
-               </form>
-            </div>
+
+                  <div class="form-group">
+                     <label class="field-group">
+                        <div class="field-label text__popup">Расскажите, какой контент вы хотели бы видеть
+                           на нашем сайте?</div>
+                        <div><textarea class="field textarea text__popup" placeholder="Может, больше рецептов?"
+                              required></textarea>
+                        </div>
+                     </label>
+                  </div>
+
+                  <div class="form-group form-actions">
+                     <button class="button__form button__form__submit" type="button">Отправить</button>
+                  </div>
+               </div>
+            </form>
          </div>
       </div>
+   </div>
 
 
 </body>
