@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: "OpenSans-Regular";
+  font-family: "OpenSans";
   src: url(fonts/OpenSans-Regular.ttf) format("truetype"),
     url(fonts/OpenSans-Regular.woff) format("woff"),
     url(fonts/OpenSans-Regular.woff2) format("woff2");
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "OpenSans-Bold";
+  font-family: "OpenSans";
   src: url(fonts/OpenSans-Bold.ttf) format("truetype"),
     url(fonts/OpenSans-Bold.woff) format("woff"),
     url(fonts/OpenSans-Bold.woff2) format("woff2");
@@ -81,16 +81,13 @@
   margin-top: 29px;
 }
 
-.menu-link__indent {
-  /* отступ меню на 35 начиная от 2го */
-  margin-left: 35px;
-}
-
 .menu-link {
   color: #ffffff;
   text-decoration: none;
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 13px;
+  margin: 0 17px;
+  font-weight: normal;
 }
 
 .menu-link:hover {
@@ -101,9 +98,10 @@
 .header-title {
   max-width: 720px;
   color: #ffffff;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 45px;
   line-height: 75px;
+  font-weight: bold;
 
   position: relative;
   z-index: 1;
@@ -124,9 +122,10 @@
 
 .section__header__text {
   color: black;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .section__header__text:after {
@@ -196,7 +195,6 @@
 
   list-style-type: none;
   margin-bottom: 7px;
-  /*margin: 35px auto 7px 30px;*/
 }
 
 .now-in-trends__link {
@@ -204,9 +202,10 @@
   margin-right: 18px;
 
   color: #b59f5b;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .now-in-trends__link:hover {
@@ -218,9 +217,10 @@
   text-decoration: none;
 
   color: white;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
+  font-weight: bold;
   line-height: 24px;
 }
 
@@ -272,7 +272,6 @@
   box-sizing: border-box;
 }
 
-.post:nth-child(n + 2),
 .post__indent {
   margin-top: 64px;
 }
@@ -289,9 +288,10 @@
   margin-right: 21px;
 
   color: #b59f5b;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .posts-content-link:hover {
@@ -309,24 +309,27 @@
 
 .posts-content-date {
   color: #888888;
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 12px;
+  font-weight: normal;
 
   margin-right: 15px;
 }
 
 .posts-content-autor {
   color: black;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 12px;
+  font-weight: bold;
 }
 
 .posts-content-title {
   color: black;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
   line-height: 24px;
+  font-weight: bold;
 
   margin-top: 10px;
   margin-bottom: 36px;
@@ -339,9 +342,10 @@
 .posts-content-text {
   width: 367px;
   color: black;
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 15px;
   line-height: 22px;
+  font-weight: normal;
 }
 
 .posts-content-text__indent {
@@ -366,11 +370,12 @@
 
 .news-header {
   color: black;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 44px;
   text-align: center;
+  font-weight: bold;
 
   position: relative;
 }
@@ -394,7 +399,6 @@
   flex-direction: row;
 }
 
-.news-container:nth-child(n + 3),
 .news-container__indent {
   margin-top: 22px;
 }
@@ -417,27 +421,30 @@
 
 .news-content-date {
   color: black;
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 12px;
   text-transform: lowercase;
   opacity: 0.54;
+  font-weight: normal;
 }
 
 .news-content-title {
   color: black;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .news-content-title-hover:hover {
   color: #b59f5b;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .search {
@@ -454,9 +461,10 @@
 .search-field {
   color: black;
   opacity: 0.54;
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 13px;
   text-transform: capitalize;
+  font-weight: normal;
 
   border: none;
   background-color: #f4f7f6;
@@ -485,10 +493,11 @@
 
 .e-mail__header {
   color: black;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
+  font-weight: bold;
 
   position: relative;
 
@@ -517,9 +526,10 @@
 
   font-size: 13px;
   color: black;
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: "OpenSans", sans-serif;
   opacity: 0.54;
   padding-left: 19px;
+  font-weight: normal;
 
   position: relative;
 }
@@ -537,8 +547,9 @@
   border: none;
 
   color: #ffffff;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -556,10 +567,11 @@
 
 .tags__header {
   color: black;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 45px;
+  font-weight: bold;
   text-align: center;
 
   position: relative;
@@ -606,16 +618,18 @@
 .tag-link {
   text-decoration: none;
   padding: 2px 13px;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 12px;
+  font-weight: bold;
   color: #0f0d0e;
   text-transform: uppercase;
 }
 
 .topic__header {
   color: black;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 45px;
   text-align: center;
@@ -636,8 +650,9 @@
 
 .topic-link {
   text-decoration: none;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 14px;
+  font-weight: bold;
   color: #0f0d0e;
   text-transform: capitalize;
 }
@@ -658,8 +673,9 @@
 }
 
 .topic-item__number {
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 12px;
+  font-weight: bold;
   color: #b59f5b;
   line-height: 40px;
 }
@@ -713,8 +729,9 @@
 }
 
 .card__title {
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 20px;
+  font-weight: bold;
   color: black;
   line-height: 24px;
   text-transform: uppercase;
@@ -723,19 +740,21 @@
 }
 
 .card__text {
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 15px;
   color: black;
   line-height: 22px;
+  font-weight: normal;
 }
 
 .card__link {
   text-decoration: none;
 
   color: #b59f5b;
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 15px;
   line-height: 22px;
+  font-weight: normal;
 }
 
 .card__link:hover {
@@ -758,8 +777,9 @@
   border: none;
 
   color: #ffffff;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -780,16 +800,18 @@
 }
 
 .cost__old {
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 14px;
+  font-weight: bold;
   color: black;
   text-decoration: line-through;
   display: flex;
 }
 
 .cost__new {
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 20px;
+  font-weight: bold;
   color: black;
   display: flex;
 }
@@ -827,8 +849,9 @@
 
 .copyright-link {
   color: #999999;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 12px;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -850,7 +873,7 @@
 }
 
 .popup {
-  /*display: none;*/
+  display: none; /* всплывающая форма*/
   position: fixed;
   z-index: 25;
   top: 50%;
@@ -886,9 +909,10 @@
 }
 .popup__header__text {
   color: black;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .popup__header__text::after {
@@ -912,8 +936,9 @@
 
 .text__popup {
   color: black;
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 13px;
+  font-weight: normal;
 }
 
 .select-label {
@@ -945,8 +970,9 @@
 
 .select_text {
   color: black;
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 13px;
+  font-weight: normal;
 }
 
 .radio__container {
@@ -1000,8 +1026,9 @@
   background-color: #b59f5b;
   border: none;
   color: #ffffff;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
