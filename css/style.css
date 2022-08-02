@@ -862,7 +862,7 @@
 
 /*форма*/
 .popup_back {
-  /*display:none ;*/
+ display:none ;/* затемнение сайта под попап*/
   position: fixed;
   z-index: 15;
   left: 0;
